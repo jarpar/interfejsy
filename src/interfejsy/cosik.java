@@ -1,0 +1,5 @@
+package interfejsy;
+
+interface cosik {
+
+}

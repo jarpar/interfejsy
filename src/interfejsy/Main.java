@@ -41,43 +41,6 @@ public class Main {
     }
 }
 
-interface nazwaInterfejsu {
-    double PI = 3.14; //public static final
-
-    void cos(); //public abstract
-
-}
-
-interface cosik {
-
-}
-
-class Pracownik implements nazwaInterfejsu, cosik, Comparable {
-    public void cos() {
-        System.out.println("implementacja");
-    }
-
-    Pracownik(double wynagrodzenie) {
-        this.wynagrodzenie = wynagrodzenie;
-    }
-
-    private double wynagrodzenie;
-
-    public double getWynagrodzenie() {
-        return this.wynagrodzenie;
-    }
-
-    @Override
-    public int compareTo(Object o) {
-        Pracownik przyslany = (Pracownik) o;
-        if (this.wynagrodzenie < przyslany.wynagrodzenie)
-            return -1;
-        else if (this.wynagrodzenie > przyslany.wynagrodzenie)
-            return 1;
-        else return 0;
-    }
-}
-
 //class Programista extends Pracownik {
 //
 //}
