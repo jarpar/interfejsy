@@ -1,6 +1,7 @@
 package interfejsy;
 
 import java.util.Arrays;
+import java.util.Collections;
 
 public class Main {
     public static void main(String[] args) {
@@ -32,6 +33,13 @@ public class Main {
 
         Arrays.sort(pracownik);
         System.out.println("po sortowaniu:");
+        for (Pracownik p : pracownik
+        ) {
+            System.out.println(p.getWynagrodzenie());
+
+        }
+        Arrays.sort(pracownik, Collections.reverseOrder());
+        System.out.println("po odwróconym sortowaniu Collections.reverseOrder():");
         for (Pracownik p : pracownik
         ) {
             System.out.println(p.getWynagrodzenie());
