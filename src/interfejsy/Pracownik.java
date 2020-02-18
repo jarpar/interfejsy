@@ -20,8 +20,8 @@ class Pracownik implements nazwaInterfejsu, cosik, Comparable {
         Pracownik przyslany = (Pracownik) o;
         if (this.wynagrodzenie < przyslany.wynagrodzenie)
             return -1;
-        else if (this.wynagrodzenie > przyslany.wynagrodzenie)
+        if (this.wynagrodzenie > przyslany.wynagrodzenie)
             return 1;
-        else return 0;
+        return 0;
     }
 }
